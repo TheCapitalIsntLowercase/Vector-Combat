@@ -9,7 +9,7 @@ version = "0.2.0-dev"
 displayName = "Vector Combat"
 authors = "PheeloStone"
 displayURL = "https://modrinth.com/mod/vector-combat"
-description = '''Standalone movement-driven melee: the attack you swing depends on how you are moving. Sprint to lunge, fall to slam, strafe to sweep. Arc hit detection, first-person swing animation, categories, stun and attack-speed penalties. All data-driven.'''
+description = '''Directional melee combat: how you move picks your swing (slash, sweep, lunge, rising and falling strikes), with arc hit detection, parrying, and mobs that telegraph their attacks, take turns in crowds and use signature moves.'''
 
 [[dependencies.vectorcombat]]
 modId = "neoforge"
