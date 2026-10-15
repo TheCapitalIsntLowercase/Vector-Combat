@@ -1,0 +1,27 @@
+[
+  { "match": ["minecraft:trident"], "defaults": { "categories": ["pierce"] }, "animations": { "joust": "joust_trident", "uppercut": "uppercut_trident", "swing_alt": "swing" } },
+  { "match": ["minecraft:mace"], "defaults": { "categories": ["bash"] } },
+  { "match": ["basicweapons:*spear*"], "animations": { "joust": "joust_spear", "uppercut": "uppercut_spear", "swing_alt": "swing" } },
+  { "match": ["basicweapons:*glaive*"], "animations": { "uppercut": "uppercut_glaive", "swing_alt": "swing" } },
+  { "match": ["basicweapons:*quarterstaff*"], "animations": { "uppercut": "uppercut_quarterstaff", "swing_alt": "swing" } },
+  { "match": ["minecraft:bow", "minecraft:crossbow"], "two_handed": true },
+  { "match": ["#minecraft:shovels", "#minecraft:pickaxes", "#minecraft:hoes"], "defaults": { "categories": ["slash"] } },
+
+  { "match": ["@type:mace", "@type:hammer", "@type:greathammer", "@type:warhammer", "@type:maul", "@type:club", "@type:cudgel", "@type:flail", "@type:morningstar",
+              "@type:quarterstaff", "@type:battlestaff", "@type:staff", "@type:knuckles", "@type:fist", "@type:gauntlet", "@type:tonfa"], "defaults": { "categories": ["bash"] } },
+  { "match": ["@type:axe", "@type:greataxe", "@type:battleaxe", "@type:waraxe", "@type:halberd", "@type:cleaver"], "defaults": { "categories": ["cleave"] } },
+  { "match": ["@type:spear", "@type:lance", "@type:pike", "@type:trident", "@type:rapier", "@type:javelin", "@type:estoc", "@type:katar", "@type:sai"], "defaults": { "categories": ["pierce"] } },
+
+  { "match": ["#c:tools/mace"], "defaults": { "categories": ["bash"] } },
+  { "match": ["#c:tools/spear"], "defaults": { "categories": ["pierce"] } },
+  { "match": ["#minecraft:axes"], "defaults": { "categories": ["cleave"] } },
+
+  { "match": ["*hammer*", "*:mace*", "*_mace*", "*club*", "*maul*", "*flail*", "*morning_star*", "*morningstar*", "*cudgel*", "*quarterstaff*", "*battlestaff*", "*knuckle*", "*tonfa*"],
+    "defaults": { "categories": ["bash"] } },
+  { "match": ["*:axe", "*_axe", "*_axe_*", "*battleaxe*", "*greataxe*", "*waraxe*", "*halberd*", "*cleaver*"], "defaults": { "categories": ["cleave"] } },
+  { "match": ["*spear*", "*:lance*", "*_lance*", "*:pike", "*_pike", "*:pike_*", "*_pike_*", "*rapier*", "*javelin*", "*estoc*", "*katar*", "*trident*"],
+    "defaults": { "categories": ["pierce"] } },
+
+  { "match": ["@can:axe_dig"], "defaults": { "categories": ["cleave"] } },
+  { "match": ["@can:trident_throw"], "defaults": { "categories": ["pierce"] } }
+]

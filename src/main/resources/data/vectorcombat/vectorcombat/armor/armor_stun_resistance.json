@@ -1,0 +1,13 @@
+[
+  { "match": ["minecraft:leather_helmet", "minecraft:leather_chestplate", "minecraft:leather_leggings", "minecraft:leather_boots"],
+    "attribute": "vectorcombat:stun_resistance", "amount": 0.01 },
+  { "match": ["minecraft:chainmail_helmet", "minecraft:chainmail_chestplate", "minecraft:chainmail_leggings", "minecraft:chainmail_boots",
+              "minecraft:golden_helmet", "minecraft:golden_chestplate", "minecraft:golden_leggings", "minecraft:golden_boots"],
+    "attribute": "vectorcombat:stun_resistance", "amount": 0.03 },
+  { "match": ["minecraft:iron_helmet", "minecraft:iron_chestplate", "minecraft:iron_leggings", "minecraft:iron_boots"],
+    "attribute": "vectorcombat:stun_resistance", "amount": 0.05 },
+  { "match": ["minecraft:diamond_helmet", "minecraft:diamond_chestplate", "minecraft:diamond_leggings", "minecraft:diamond_boots"],
+    "attribute": "vectorcombat:stun_resistance", "amount": 0.08 },
+  { "match": ["minecraft:netherite_helmet", "minecraft:netherite_chestplate", "minecraft:netherite_leggings", "minecraft:netherite_boots"],
+    "attribute": "vectorcombat:stun_resistance", "amount": 0.1 }
+]

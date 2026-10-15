@@ -1,0 +1,15 @@
+[
+  { "entities": ["minecraft:iron_golem"], "categories": ["bash"], "wind_up": 0.6,
+    "effects": [{ "type": "stun", "duration": 2.5 }] },
+  { "entities": ["minecraft:ravager"], "categories": ["bash"], "wind_up": 0.6, "reach": 0.3, "reach_forward": 1.25,
+    "effects": [{ "type": "stun", "duration": 2.0 }] },
+  { "entities": ["minecraft:hoglin", "minecraft:zoglin"], "age": "adult", "categories": ["bash"], "signature": "feral", "interval": 1.8,
+    "effects": [{ "type": "stun", "duration": 1.0 }] },
+  { "entities": ["minecraft:hoglin", "minecraft:zoglin"], "age": "baby", "categories": ["bash"], "signature": "feral", "interval": 0.95 },
+  { "entities": ["minecraft:vindicator"], "categories": ["cleave"], "wind_up": 0.5, "signature": "overhead",
+    "effects": [{ "type": "stun", "duration": 0.5 }] },
+  { "entities": ["minecraft:silverfish", "minecraft:endermite"], "wind_up": 0.35, "interval": 1.1, "signature": "hop" },
+  { "entities": ["minecraft:warden"], "wind_up": 0.7, "signature": "overhead" },
+  { "entities": ["minecraft:enderman"], "interval": 1.2, "reach": 0.5, "signature": "limbs" },
+  { "entities": ["minecraft:arrow", "minecraft:spectral_arrow", "minecraft:trident"], "categories": ["pierce"] }
+]

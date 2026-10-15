@@ -1,0 +1,6 @@
+[
+  { "thrower": "minecraft:husk", "thrown": "minecraft:silverfish", "min": 5, "max": 14, "cooldown": 10, "wait": 6, "unarmed": true },
+  { "thrower": "minecraft:bogged", "thrown": "minecraft:slime", "size": 1, "min": 5, "max": 14, "cooldown": 12, "wait": 6, "unarmed": false },
+  { "thrower": "minecraft:piglin_brute", "thrown": "minecraft:magma_cube", "size": 1, "min": 5, "max": 14, "cooldown": 12, "wait": 6, "unarmed": false },
+  { "thrower": "minecraft:iron_golem", "thrown": "target", "cooldown": 8, "unarmed": false }
+]

@@ -1,0 +1,8 @@
+[
+  { "entities": ["minecraft:zombie", "minecraft:husk", "minecraft:zombie_villager"], "chance": 0.3, "adults_only": true,
+    "items": [
+      { "item": "minecraft:wooden_sword", "weight": 4 }, { "item": "minecraft:stone_sword", "weight": 3 }, { "item": "minecraft:iron_sword", "weight": 1 },
+      { "item": "minecraft:wooden_axe", "weight": 3 }, { "item": "minecraft:stone_axe", "weight": 2 }, { "item": "minecraft:iron_axe", "weight": 1 },
+      { "item": "minecraft:iron_shovel", "weight": 2 }
+    ] }
+]

@@ -1,0 +1,9 @@
+{
+  "attacks": ["Falling Slash"],
+  "weapon_types": ["claymore", "greatsword", "greathammer", "greataxe", "hammer", "mace", "halberd", "zweihander", "battleaxe", "warhammer"],
+  "items": ["minecraft:mace"],
+  "mobs": ["minecraft:ravager", "minecraft:iron_golem", "minecraft:warden", "minecraft:piglin_brute", "minecraft:hoglin", "minecraft:zoglin"],
+  "min_strength": 0.9,
+  "break_ticks": 60,
+  "stagger": 0.5
+}

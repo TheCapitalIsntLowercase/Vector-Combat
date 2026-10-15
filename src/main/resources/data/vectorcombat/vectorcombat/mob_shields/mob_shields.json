@@ -1,0 +1,17 @@
+{
+  "chance": 0.15,
+  "items": "auto",
+  "weights": { "minecraft:shield": 4 },
+  "exclude": [],
+  "mobs": [
+    "minecraft:zombie",
+    "minecraft:husk",
+    "minecraft:drowned",
+    "minecraft:zombie_villager",
+    "minecraft:wither_skeleton",
+    "minecraft:piglin",
+    "minecraft:piglin_brute",
+    "minecraft:zombified_piglin",
+    "minecraft:vindicator"
+  ]
+}

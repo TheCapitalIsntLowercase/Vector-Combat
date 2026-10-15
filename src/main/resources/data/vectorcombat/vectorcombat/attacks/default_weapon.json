@@ -1,0 +1,101 @@
+{
+  "match": ["@weapon"],
+  "priority": -100,
+  "defaults": {
+    "categories": ["slash"],
+    "attack_speed_penalty": { "amount": 0.15, "duration": 1.0 },
+    "consecutive_use_penalty": { "amount": 0.15, "duration": 2.0 }
+  },
+  "default_attack": {
+    "name": "Slash",
+    "animation": "swing",
+    "alternate": "swing_alt",
+    "angle": 120,
+    "damage": 1.0,
+    "hit_at": 0.15
+  },
+  "attacks": [
+    {
+      "name": "Falling Slash",
+      "arrow": "falling",
+      "when": [["in_air", "down_speed:-0.04"]],
+      "animation": "overhead",
+      "categories": ["cleave"],
+      "effects": [
+        { "type": "stun", "duration": 1.5 },
+        { "type": "food_exhaustion", "amount": 0.5 }
+      ],
+      "attack_speed_penalty": { "amount": 0.3, "duration": 1.5 },
+      "consecutive_use_penalty": { "amount": 0.25, "duration": 2.5 },
+      "angle": 120,
+      "damage": 1.6,
+      "hit_at": 0.18,
+      "hitstop_bonus": 1,
+      "pitch": 0.8
+    },
+    {
+      "name": "Rising Slash",
+      "arrow": "rising",
+      "when": [["in_air", "up_speed:0.04"]],
+      "animation": "uppercut",
+      "categories": ["slash"],
+      "effects": [{ "type": "set_motion", "target": "victim", "motion": [0, 0.5, 0.1] }],
+      "attack_speed_penalty": { "amount": 0.2, "duration": 1.2 },
+      "angle": 100,
+      "damage": 1.2,
+      "hit_at": 0.18,
+      "pitch": 1.1
+    },
+    {
+      "name": "Lunge",
+      "arrow": "forward",
+      "when": [["on_ground", "sprinting", "forward_speed:0.15"]],
+      "animation": "joust",
+      "categories": ["pierce"],
+      "effects": [
+        { "type": "set_motion", "target": "victim", "motion": [0, 0.3, 0.9] },
+        { "type": "set_motion", "target": "user", "motion": [0, 0.1, 0.5] },
+        { "type": "food_exhaustion", "amount": 0.5 }
+      ],
+      "attack_speed_penalty": { "amount": 0.25, "duration": 1.5 },
+      "consecutive_use_penalty": { "amount": 0.2, "duration": 2.5 },
+      "range": 1.35,
+      "angle": 0,
+      "damage": 1.3,
+      "hit_at": 0.18,
+      "pitch": 1.3
+    },
+    {
+      "name": "Left Sweep",
+      "penalty_group": "sweep",
+      "arrow": "left",
+      "when": [["on_ground", "left_speed:0.1"]],
+      "animation": "slash_to_left",
+      "effects": [
+        { "type": "set_motion", "target": "victim", "motion": [-0.35, 0.15, 0.2] },
+        { "type": "set_motion", "target": "user", "motion": [-0.3, 0, 0.05] }
+      ],
+      "range": 1.1,
+      "angle": 150,
+      "damage": 0.9,
+      "hit_at": 0.18,
+      "pitch": 0.9
+    },
+    {
+      "name": "Right Sweep",
+      "penalty_group": "sweep",
+      "arrow": "right",
+      "when": [["on_ground", "right_speed:0.1"]],
+      "animation": "slash_to_right",
+      "effects": [
+        { "type": "set_motion", "target": "victim", "motion": [0.35, 0.15, 0.2] },
+        { "type": "set_motion", "target": "user", "motion": [0.3, 0, 0.05] }
+      ],
+      "range": 1.1,
+      "angle": 150,
+      "damage": 0.9,
+      "hit_at": 0.18,
+      "pitch": 1.1
+    }
+  ]
+}

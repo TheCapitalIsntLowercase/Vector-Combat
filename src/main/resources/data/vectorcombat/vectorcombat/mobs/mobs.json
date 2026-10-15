@@ -1,0 +1,20 @@
+[
+  { "entities": ["minecraft:pillager"],
+    "damage_modifiers": [
+      { "categories": ["slash"], "multiplier": 1.25 },
+      { "categories": ["pierce"], "multiplier": 0.75 } ] },
+  { "entities": ["minecraft:vindicator"],
+    "attributes": [{ "attribute": "vectorcombat:stun_resistance", "value": 0.25 }],
+    "damage_modifiers": [
+      { "categories": ["pierce"], "multiplier": 1.25 },
+      { "categories": ["slash"], "multiplier": 0.75 },
+      { "categories": ["cleave", "bash"], "multiplier": 0.5 } ] },
+  { "entities": ["#minecraft:skeletons"],
+    "damage_modifiers": [
+      { "categories": ["bash"], "multiplier": 1.5 },
+      { "categories": ["pierce"], "multiplier": 0.5 } ] },
+  { "entities": ["minecraft:enderman"],
+    "attributes": [{ "attribute": "minecraft:generic.attack_damage", "value": 1.0 }] },
+  { "entities": ["minecraft:iron_golem", "minecraft:ravager", "minecraft:warden"],
+    "attributes": [{ "attribute": "vectorcombat:stun_resistance", "value": 0.5 }] }
+]

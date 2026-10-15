@@ -1,0 +1,57 @@
+{
+  "scenarios": [
+    {
+      "name": "mixed",
+      "about": "Melee and a few archers, the everyday fight.",
+      "waves": [
+        [ { "id": "minecraft:zombie", "count": 3 }, { "id": "minecraft:skeleton", "count": 1 } ],
+        [ { "id": "minecraft:husk", "count": 2 }, { "id": "minecraft:vindicator", "count": 1 }, { "id": "minecraft:skeleton", "count": 2 } ],
+        [ { "id": "minecraft:wither_skeleton", "count": 1 }, { "id": "minecraft:zombie", "count": 3, "shield": true } ]
+      ]
+    },
+    {
+      "name": "shield_wall",
+      "about": "Mobs that guard: read their raise, hit from the side, break guards with heavy hits.",
+      "waves": [
+        [ { "id": "minecraft:zombie", "count": 3, "shield": true } ],
+        [ { "id": "minecraft:vindicator", "count": 2, "shield": true }, { "id": "minecraft:zombie", "count": 2, "shield": true } ],
+        [ { "id": "minecraft:wither_skeleton", "count": 2, "shield": true } ]
+      ]
+    },
+    {
+      "name": "ranged",
+      "about": "Archers and fireballs: swing to knock projectiles away, time it to send them back.",
+      "waves": [
+        [ { "id": "minecraft:skeleton", "count": 3 } ],
+        [ { "id": "minecraft:stray", "count": 2 }, { "id": "minecraft:pillager", "count": 2 } ],
+        [ { "id": "minecraft:blaze", "count": 2 }, { "id": "minecraft:skeleton", "count": 2 } ]
+      ]
+    },
+    {
+      "name": "crowd",
+      "about": "A crowd: only a couple wind up at once, the rest circle and feint.",
+      "waves": [
+        [ { "id": "minecraft:zombie", "count": 8 } ],
+        [ { "id": "minecraft:zombie", "count": 6 }, { "id": "minecraft:husk", "count": 4 } ]
+      ]
+    },
+    {
+      "name": "brutes",
+      "about": "Heavy hitters that break your guard: parry them instead.",
+      "waves": [
+        [ { "id": "minecraft:vindicator", "count": 2 } ],
+        [ { "id": "minecraft:piglin_brute", "count": 2 } ],
+        [ { "id": "minecraft:ravager", "count": 1 } ]
+      ]
+    },
+    {
+      "name": "duel",
+      "about": "One strong opponent at a time.",
+      "waves": [
+        [ { "id": "minecraft:wither_skeleton", "count": 1, "shield": true } ],
+        [ { "id": "minecraft:piglin_brute", "count": 1 } ],
+        [ { "id": "minecraft:vindicator", "count": 1, "shield": true } ]
+      ]
+    }
+  ]
+}

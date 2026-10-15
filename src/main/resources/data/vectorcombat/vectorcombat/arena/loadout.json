@@ -1,0 +1,9 @@
+{
+  "loadout": {
+    "armor": ["minecraft:iron_helmet", "minecraft:iron_chestplate", "minecraft:iron_leggings", "minecraft:iron_boots"],
+    "weapons": ["minecraft:iron_sword", "minecraft:iron_axe", "minecraft:mace"],
+    "random_weapons": 4,
+    "shield": true,
+    "extras": ["minecraft:bow", "minecraft:arrow*32", "minecraft:cooked_beef*16"]
+  }
+}

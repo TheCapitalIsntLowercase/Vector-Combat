@@ -1,0 +1,30 @@
+{
+  "default": { "parry": 0.1, "block": 0.2, "cooldown": 2.5 },
+  "mobs": [
+    {
+      "match": ["minecraft:wither_skeleton", "minecraft:piglin_brute", "minecraft:vindicator"],
+      "parry": 0.3, "block": 0.3, "cooldown": 1.5
+    },
+    {
+      "match": ["minecraft:skeleton", "minecraft:stray", "minecraft:bogged", "minecraft:piglin", "minecraft:zombified_piglin", "minecraft:pillager", "minecraft:evoker", "minecraft:illusioner"],
+      "parry": 0.18, "block": 0.25, "cooldown": 2.0
+    },
+    {
+      "match": ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:zombie_villager"],
+      "parry": 0.1, "block": 0.3, "cooldown": 2.5
+    }
+  ],
+  "blockers": {
+    "shield": { "parry": 1.0, "block": 1.3 },
+    "weapon": { "parry": 1.2, "block": 0.8 }
+  },
+  "weapon_types": {
+    "dagger": { "parry": 1.3, "block": 0.6 },
+    "rapier": { "parry": 1.4, "block": 0.7 },
+    "katana": { "parry": 1.3, "block": 0.9 },
+    "claymore": { "parry": 0.8, "block": 1.2 },
+    "greatsword": { "parry": 0.8, "block": 1.2 },
+    "greathammer": { "parry": 0.6, "block": 1.2 }
+  },
+  "difficulty": { "peaceful": 0.0, "easy": 0.5, "normal": 1.0, "hard": 1.4 }
+}
