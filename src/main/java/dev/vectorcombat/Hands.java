@@ -108,7 +108,7 @@ public final class Hands {
         boolean on = on(setting, blockedBy);
         if (!Boolean.valueOf(on).equals(lastOn)) { // once, and again when the setting changes in game
             lastOn = on;
-            VectorCombat.LOG.info("[diag] hands: {} (setting {}{})", on ? "on" : "off", setting ? "on" : "off", blockedBy == null ? "" : ", " + blockedBy + " is installed");
+            VectorCombat.LOG.info("hands: {} (setting {}{})", on ? "on" : "off", setting ? "on" : "off", blockedBy == null ? "" : ", " + blockedBy + " is installed");
             Diag.event("hands", "on", on, "setting", setting, "blockedBy", blockedBy);
         }
         return on;
@@ -359,7 +359,7 @@ public final class Hands {
         int i = slim ? 1 : 0;
         if (FITTED[i] == 0) {
             FITTED[i] = solve(model, slim);
-            VectorCombat.LOG.info("[diag] hands: {} arm fitted to the default hand at {}", slim ? "slim" : "wide", FITTED[i]);
+            VectorCombat.LOG.info("hands: {} arm fitted to the default hand at {}", slim ? "slim" : "wide", FITTED[i]);
         }
         return FITTED[i];
     }

@@ -168,7 +168,7 @@ public final class MobShields {
         p = new Pool(list, w);
         pool = p;
         List<String> ids = list.stream().map(i -> BuiltInRegistries.ITEM.getKey(i).toString()).toList();
-        VectorCombat.LOG.info("[diag] mob shields: chance {}, {} shields {} (left out: {})", chance, auto ? "auto," : "listed,", ids, dropped);
+        VectorCombat.LOG.info("mob shields: chance {}, {} shields {} (left out: {})", chance, auto ? "auto," : "listed,", ids, dropped);
         Diag.event("mob_shield_pool", "auto", auto, "chance", chance, "shields", String.join(",", ids), "leftOut", dropped.isEmpty() ? null : String.join(",", dropped));
         return p;
     }

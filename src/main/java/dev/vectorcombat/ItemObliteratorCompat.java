@@ -21,7 +21,7 @@ final class ItemObliteratorCompat {
             return Utils.isDisabled(stack);
         } catch (LinkageError | RuntimeException e) {
             broken = true;
-            VectorCombat.LOG.warn("[diag] Item Obliterator check unavailable, its disabled items are not filtered ({})", e.toString());
+            VectorCombat.LOG.warn("Item Obliterator check unavailable, its disabled items are not filtered ({})", e.toString());
             return false;
         }
     }

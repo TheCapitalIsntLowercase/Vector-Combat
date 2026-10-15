@@ -525,7 +525,7 @@ public final class Swing {
     private static float dipMax, dipStrength;
     private static boolean dipCompensated, dipSwitched;
 
-    /** [diag] One event per dip of the held weapon: how deep, how long, and whether the cooldown explains it. {@code held} is what the hand shows at the end of it (a switch's new weapon). */
+    /** For the debug log: One event per dip of the held weapon: how deep, how long, and whether the cooldown explains it. {@code held} is what the hand shows at the end of it (a switch's new weapon). */
     private static void trackDip(ItemStack held, float equipProgress, boolean compensated) {
         LocalPlayer p = Minecraft.getInstance().player;
         if (equipProgress > 0.05f) {

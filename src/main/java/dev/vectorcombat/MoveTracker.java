@@ -61,7 +61,7 @@ public final class MoveTracker {
             return out;
         }
 
-        /** [diag] Height, vertical speed and ground flag of the kept samples, oldest first. */
+        /** For the debug log: Height, vertical speed and ground flag of the kept samples, oldest first. */
         String history(Object who) {
             ArrayDeque<Sample> d = ring.get(who);
             if (d == null) return "[]";
@@ -90,7 +90,7 @@ public final class MoveTracker {
         if (!side(p).sample(p, p.level().getGameTime(), p.position(), v -> state(p, v))) Diag.count("dup_tick_sample");
     }
 
-    /** [diag] Last 8 ticks of height, vertical speed and ground flag, oldest first. */
+    /** For the debug log: Last 8 ticks of height, vertical speed and ground flag, oldest first. */
     public static String history(Player p) {
         return side(p).history(p);
     }

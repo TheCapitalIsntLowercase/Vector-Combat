@@ -35,7 +35,7 @@ public final class VectorCombat {
         Stuns.EFFECTS.register(modBus);
         Stuns.ATTRIBUTES.register(modBus);
         for (String id : new String[] {"combatnouveau", "cutthrough", "shouldersurfing", "crosshairtweaks", "shieldexp", "basicweapons", "damagenumbers", "bettercombat", "visceral_combat"}) {
-            if (net.neoforged.fml.ModList.get().isLoaded(id)) LOG.info("[diag] interfering mod present: {}", id);
+            if (net.neoforged.fml.ModList.get().isLoaded(id)) LOG.info("interfering mod present: {}", id);
         }
     }
 

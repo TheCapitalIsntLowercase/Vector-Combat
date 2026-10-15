@@ -79,7 +79,7 @@ public final class Guard {
         boolean on = on(mode, otherLoaded && !itemOnly);
         if (!Boolean.valueOf(on).equals(lastOn)) { // once, and again when the setting (or Shield Expansion's mode) changes
             lastOn = on;
-            VectorCombat.LOG.info("[diag] guard: {} (mode {}{})", on ? "on" : "off", mode, otherLoaded ? ", " + OTHER + " is installed" + (itemOnly ? " in item only mode" : " with its own parry") : "");
+            VectorCombat.LOG.info("guard: {} (mode {}{})", on ? "on" : "off", mode, otherLoaded ? ", " + OTHER + " is installed" + (itemOnly ? " in item only mode" : " with its own parry") : "");
             Diag.event("guard", "on", on, "mode", mode.name(), "other", otherLoaded ? OTHER : null, "itemOnly", otherLoaded ? itemOnly : null);
         }
         return on;
@@ -99,7 +99,7 @@ public final class Guard {
             return itemOnlyField.getBoolean(null);
         } catch (ReflectiveOperationException | LinkageError | RuntimeException e) {
             itemOnlyBroken = true;
-            VectorCombat.LOG.warn("[diag] guard: cannot read Shield Expansion's itemOnlyMode ({}), stepping aside for it", e.toString());
+            VectorCombat.LOG.warn("guard: cannot read Shield Expansion's itemOnlyMode ({}), stepping aside for it", e.toString());
             return false;
         }
     }

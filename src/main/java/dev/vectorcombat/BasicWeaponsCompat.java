@@ -43,7 +43,7 @@ final class BasicWeaponsCompat {
             return true;
         } catch (ReflectiveOperationException | RuntimeException e) {
             missing = true;
-            VectorCombat.LOG.warn("[diag] Basic Weapons compat off: no {} on Player ({})", FIELD, e.toString());
+            VectorCombat.LOG.warn("Basic Weapons compat off: no {} on Player ({})", FIELD, e.toString());
             return false;
         }
     }

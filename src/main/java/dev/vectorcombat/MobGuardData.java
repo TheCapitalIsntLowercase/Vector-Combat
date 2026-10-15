@@ -69,7 +69,7 @@ final class MobGuardData {
         blockers = Map.copyOf(b);
         types = Map.copyOf(t);
         difficulty = Map.copyOf(d);
-        VectorCombat.LOG.info("[diag] mob guard: {} mob entries, {} blockers, {} weapon types, {} difficulties", list.size(), b.size(), t.size(), d.size());
+        VectorCombat.LOG.info("mob guard: {} mob entries, {} blockers, {} weapon types, {} difficulties", list.size(), b.size(), t.size(), d.size());
     }
 
     private static Odds odds(JsonObject o, Odds base) {

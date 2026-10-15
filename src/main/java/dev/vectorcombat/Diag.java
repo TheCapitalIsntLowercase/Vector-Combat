@@ -101,6 +101,7 @@ public final class Diag {
 
     /** Running count / sum / max for a measurement (latency ms, tick cost in microseconds). */
     public static void add(String key, long value) {
+        if (!writing()) return; // only for the debug log
         STATS.compute(key, (k, s) -> {
             if (s == null) s = new long[3];
             s[0]++;

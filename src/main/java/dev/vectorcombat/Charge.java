@@ -259,11 +259,9 @@ public final class Charge {
 
     /** The profile of a mob that charges, or null. */
     static Profile profile(Entity e) {
-        if (Domestic.exempt(e)) return null; // bred or tamed: vanilla's
-        if (e.getType().is(CHARGERS)) return HOGLIN;
-        if (e.getType().is(RAMMERS)) return RAVAGER;
-        if (e.getType().is(STAMPEDERS)) return COW;
-        return null;
+        // Asked of every mob every tick: the tags first, since most mobs are none of these.
+        Profile p = e.getType().is(CHARGERS) ? HOGLIN : e.getType().is(RAMMERS) ? RAVAGER : e.getType().is(STAMPEDERS) ? COW : null;
+        return p == null || Domestic.exempt(e) ? null : p; // bred or tamed: vanilla's
     }
 
     /** Whether {@code e} is in the charge (it is then immobile to its own AI). */
