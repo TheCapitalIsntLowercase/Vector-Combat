@@ -38,7 +38,7 @@ import net.neoforged.neoforge.event.tick.EntityTickEvent;
  * cooldown) telegraphs a line of red dust from it through the player to {@link #PAST} blocks beyond and charges along it, through anything in the way, every living thing it
  * touches hit once. While it runs the mob is immobile to its own AI ({@code LivingEntityMixin}) and moved by us; the rules and the line are pure.
  * <p>
- * {@link #HOGLIN} ({@code #vectorcombat:chargers}: hoglin, zoglin; PLAN.md "Hoglin charge"): plants and scrapes a hoof ({@link #LINE1} ticks), charges, stops, turns
+ * {@link #HOGLIN} ({@code #vectorcombat:chargers}: hoglin, zoglin): plants and scrapes a hoof ({@link #LINE1} ticks), charges, stops, turns
  * ({@link #TURN}), rears up roaring ({@link #ROAR}), draws a second line through where the player is now ({@link #LINE2}) and dashes back; then it is tired ({@link #TIRED} ticks,
  * slowed, panting) and its base attacks are slower for {@link #SLOWED} more ({@link #attackScale}). A player an adult's dash runs over unblocked is thrown up and hard-stunned
  * {@link #HIT_STUN} s; stunned by the first dash either way, they stay stunned until the second reaches them. Adults' dashes cannot be parried; blocking the first stuns
